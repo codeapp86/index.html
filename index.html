@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Capa Relatório</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ccc, #ccc);
+    }
+
+    .container {
+      max-width: 95%;
+      height: 100vh;
+      margin: 0 auto;
+      position: relative;
+      background: #ccc;
+      border: 1px solid #ccc;
+      padding: 5%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Logos */
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logos img {
+      max-height: 8vh;
+      max-width: 40%;
+      height: auto;
+    }
+
+    /* Relatório Técnico */
+    .relatorio {
+      text-align: right;
+      font-weight: bold;
+      font-size: 2vh;
+      margin-top: 2vh;
+    }
+
+    /* Hexágono azul lateral */
+    .hex {
+      width: 20vw;
+      height: 35vh;
+      background: #005b9f;
+      position: absolute;
+      top: 25vh;
+      left: 5%;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      z-index: 0;
+    }
+
+    /* Texto Central */
+    .titulo {
+      text-align: center;
+      color: #005b9f;
+      font-weight: bold;
+      font-size: 4vh;
+      margin-top: 0vh;
+       margin-left: 30%; 
+      z-index: 1;
+    }
+
+    .subtitulo {
+      text-align: justify;    /* justificado */
+      margin-left: 30%;       /* desloca 30% da esquerda */
+      font-size: 2vh;
+      font-weight: bold;
+      margin-top: 2vh;
+      z-index: 1;
+      max-width: 70%;         /* evita quebrar fora da tela */
+    }
+
+    .subtitulo span {
+      display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logos -->
+    <div class="logos">
+      <img src="./imagens/profiap.png" alt="PROFIAP">
+      <img src="./imagens/utfpr.png" alt="UTFPR">
+    </div>
+
+    <!-- Hexágono lateral -->
+    <div class="hex"> </div>
+
+    <!-- Texto Central -->
+    <div class="titulo">DASHBOARD DA ASSISTÊNCIA ESTUDANTIL</div>
+    <div class="titulo"><a href="https://assistencia-estudantil.streamlit.app" style="
+    color: rgb(252, 10, 10);">Clique aqui</a></div>
+    <div class="subtitulo">
+      <span>
+Este Dashboard da Assistência Estudantil foi desenvolvido Produto Técnico-Tecnológico (PTT) vinculado à dissertação de Mestrado do Programa de Pós-Graduação em Administração Pública em Rede Nacional (PROFIAP), da Universidade Tecnológica Federal do Paraná (UTFPR). O trabalho é de autoria de Antonio Rafael Teofilo da Silva, sob orientação do Prof. Dr. Oséias Santos de Oliveira (UTFPR).
+      </br> </br>
+A partir da análise dos dados da Assistência Estudantil da UTFPR, referentes ao período de 2018 a 2024, foi possível estruturar este protótipo, que passou por uma validação inicial e poderá ser continuamente aprimorado, com atualizações permanentes e integração a novas fontes de informação.
+</br> </br>
+Mais do que um recurso visual, o Dashboard da Assistência Estudantil tem como propósito se tornar uma ferramenta estratégica de gestão, contribuindo para a tomada de decisão das instâncias administrativas, o aprimoramento dos programas já existentes e a proposição de novas políticas públicas voltadas aos estudantes da UTFPR, especialmente aqueles em situação de vulnerabilidade.
+</br> </br>
+Este Dashboard da Assistência Estudantil representa uma contribuição relevante também para o campo da Administração Pública, ao propor um modelo de monitoramento e avaliação que fortalece a eficiência, a eficácia e a efetividade das políticas de Assistência Estudantil. Sua concepção possibilita ainda que seja adaptado e replicado em outras universidades públicas, ampliando os benefícios de sua aplicação e contribuindo para o fortalecimento da gestão universitária em âmbito nacional.
+</span>
+    </div>
+  </div>
+
+</body>
+</html>
